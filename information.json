@@ -28,5 +28,10 @@
       "operatorClass": "guard",
       "koreanName": "실버애쉬",
       "race": "feline"
+    },
+    "hoshiguma": {
+      "operatorClass": "defender",
+      "koreanName": "호시구마",
+      "race": "oni"
     }
   }

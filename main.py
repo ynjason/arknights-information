@@ -8,6 +8,7 @@ def main():
     elif command == "retrieve":
         retrieve()
     
+    
 def inputOperator():
     with open("information.json", 'r') as infile:
         currentInformation = json.load(infile)
@@ -35,6 +36,22 @@ def retrieve():
     with open("information.json", 'r') as infile:
         operatorInformation = json.load(infile)
     while True:
+        commandType = input("how do you want to get operators? ")
+        if commandType == "name":
+            retrieveName(operatorInformation)
+        elif commandType == "class":
+            retrieveClass(operatorInformation)
+        elif commandType == "race":
+            retrieveRace(operatorInformation)
+        else:
+            print("invalid command")
+            
+        if commandType == "stop":
+            break
+
+
+def retrieveName(operatorInformation):
+    while True:
         name = input("get operator information with name: ")
         if name == "stop":
             break
@@ -45,6 +62,30 @@ def retrieve():
             print("this operator does not exist")
 
 
+def retrieveClass(operatorInformation):
+    while True:
+        operatorClass = input("get operator informations with class: ")
+        if operatorClass == "stop":
+            break
+        groupedOperators = {}
+        for name, info in operatorInformation.items():
+            if info["operatorClass"] == operatorClass:
+                groupedOperators[name] = info
+        print(groupedOperators)
+                
+                
+
+def retrieveRace(operatorInformation):
+    while True:
+        operatorRace = input("get operator information with race")
+        if operatorRace == "stop":
+            break
+        groupedOperators = {}
+        for name, info in operatorInformation.items():
+            if info["operatorRace"] == operatorRace:
+                groupedOperators[name] = info
+        print(groupedOperators)
+                
 
 
 if __name__ == "__main__":
