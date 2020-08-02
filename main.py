@@ -45,7 +45,7 @@ def retrieve():
             retrieveRace(operatorInformation)
         else:
             print("invalid command")
-            
+
         if commandType == "stop":
             break
 
@@ -82,7 +82,7 @@ def retrieveRace(operatorInformation):
             break
         groupedOperators = {}
         for name, info in operatorInformation.items():
-            if info["operatorRace"] == operatorRace:
+            if info["race"] == operatorRace:
                 groupedOperators[name] = info
         print(groupedOperators)
                 
