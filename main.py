@@ -2,7 +2,7 @@ import json
 
 
 def main():
-    command = input("give command (retrieve or input operator information): ")
+    command = input("give command (retrieve or input): ")
     if command == "input":
         inputOperator()
     elif command == "retrieve":
@@ -34,8 +34,11 @@ def inputOperator():
 def retrieve():
     with open("information.json", 'r') as infile:
         operatorInformation = json.load(infile)
-    name = input("get operator information with name: ")
-    print(operatorInformation[name.lower()])
+    while True:
+        name = input("get operator information with name: ")
+        if name == "stop":
+            break
+        print(operatorInformation[name.lower()])
 
 
 
