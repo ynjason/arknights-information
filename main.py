@@ -38,7 +38,11 @@ def retrieve():
         name = input("get operator information with name: ")
         if name == "stop":
             break
-        print(operatorInformation[name.lower()])
+        try:
+            info = operatorInformation[name.lower()]
+            print(info)
+        except:
+            print("this operator does not exist")
 
 
 
