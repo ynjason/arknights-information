@@ -1,0 +1,32 @@
+{
+    "amiya": {
+      "operatorClass": "caster",
+      "koreanName": "아미야",
+      "race": "chimera"
+    },
+    "doberman": {
+      "operatorClass": "guard",
+      "koreanName": "도베르만",
+      "race": "perro"
+    },
+    "nearl": {
+      "operatorClass": "defender",
+      "koreanName": "니어",
+      "race": "kuranta"
+    },
+    "projekt red": {
+      "operatorClass": "specialist",
+      "koreanName": "레드",
+      "race": "lupo"
+    },
+    "kal'tsit": {
+      "operatorClass": "medic",
+      "koreanName": "켈시",
+      "race": "feline"
+    },
+    "silverash": {
+      "operatorClass": "guard",
+      "koreanName": "실버애쉬",
+      "race": "feline"
+    }
+  }
