@@ -33,5 +33,35 @@
       "operatorClass": "defender",
       "koreanName": "호시구마",
       "race": "oni"
+    },
+    "shirayuki": {
+      "operatorClass": "sniper",
+      "koreanName": "시라유키",
+      "race": "anaty"
+    },
+    "siege": {
+      "operatorClass": "vanguard",
+      "koreanName": "시즈",
+      "race": "aslan"
+    },
+    "swire": {
+      "operatorClass": "guard",
+      "koreanName": "스와이어",
+      "race": "feline"
+    },
+    "nian": {
+      "operatorClass": "defender",
+      "koreanName": "니안",
+      "race": "sarkaz"
+    },
+    "exusiai": {
+        "operatorClass": "sniper",
+        "koreanName": "엑시아",
+        "race": "sankta"
+    },
+    "texas": {
+        "operatorClass": "vanguard",
+        "koreanName": "텍사스",
+        "race": "lupo"
     }
   }
