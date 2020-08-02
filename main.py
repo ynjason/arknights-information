@@ -7,6 +7,8 @@ def main():
         inputOperator()
     elif command == "retrieve":
         retrieve()
+    else:
+        print("invalid command")
     
     
 def inputOperator():
@@ -77,7 +79,7 @@ def retrieveClass(operatorInformation):
 
 def retrieveRace(operatorInformation):
     while True:
-        operatorRace = input("get operator information with race")
+        operatorRace = input("get operator information with race: ")
         if operatorRace == "stop":
             break
         groupedOperators = {}
